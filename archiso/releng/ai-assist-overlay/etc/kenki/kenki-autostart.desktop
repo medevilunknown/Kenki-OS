@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=KENKI OS First Run
+Comment=Welcome and setup script for KENKI OS
+Exec=/etc/kenki/first-run.sh
+Terminal=true
+X-GNOME-Autostart-enabled=true
+X-GNOME-Autostart-Delay=10 

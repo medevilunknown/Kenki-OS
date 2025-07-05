@@ -1,0 +1,81 @@
+# BlackArch base
+blackarch
+
+# Desktop environments (choose one or more)
+xfce4
+xfce4-goodies
+# i3-gaps
+# sway
+
+# Terminal emulators
+alacritty
+kitty
+
+# Shell and prompt
+zsh
+starship
+oh-my-zsh-git
+
+# Python and AI dependencies
+python
+python-pip
+nodejs
+npm
+
+# Security tools (ensure these are present)
+nmap
+nikto
+dirb
+sqlmap
+hydra
+john
+hashcat
+aircrack-ng
+wireshark-qt
+tcpdump
+netcat
+volatility
+ghidra
+radare2
+maltego
+recon-ng
+theharvester
+amass
+wpscan
+joomscan
+skipfish
+w3af
+zap
+burp
+nessus
+openvas
+
+# Utilities
+fzf
+ripgrep
+bat
+exa
+fd
+htop
+neofetch
+curl
+wget
+unzip
+git
+base-devel
+
+# Virtualization
+qemu
+virt-manager
+virtualbox
+docker
+docker-compose
+
+# GUI tools (optional)
+firefox
+chromium
+gimp
+inkscape
+audacity
+vlc
+obs-studio 

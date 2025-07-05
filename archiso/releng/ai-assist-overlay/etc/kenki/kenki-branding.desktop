@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=Application
+Name=KENKI OS
+Comment=AI-Enhanced Security Platform
+Exec=alacritty -e kenki-assist --interactive
+Icon=terminal
+Terminal=false
+Type=Application
+Categories=System;Security;Development;
+Keywords=security;ai;hacking;penetration;testing;
+StartupNotify=true 
