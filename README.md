@@ -1,10 +1,16 @@
 # 🧠 KENKI OS - AI-Enhanced Security Platform
 
-**KENKI OS (TrAEL AI Edition)** is a custom BlackArch Linux-based operating system enhanced with AI capabilities for ethical hackers and security professionals. The OS integrates Claude 4 cloud AI and local LLMs for command explanation, natural language to shell translation, security tool guidance, and voice interaction.
+**KENKI OS (TrAEL AI Edition)** is a cutting-edge, AI-augmented Linux distribution built on top of BlackArch, designed for ethical hackers, cybersecurity researchers, and developers who want to supercharge their workflow with powerful AI-assisted terminal tools. It combines the firepower of 2,800+ BlackArch tools with an integrated AI assistant terminal.
 
 ![KENKI OS Banner](https://img.shields.io/badge/KENKI-OS-purple?style=for-the-badge&logo=linux)
 ![BlackArch Based](https://img.shields.io/badge/BlackArch-Based-red?style=for-the-badge)
 ![AI Enhanced](https://img.shields.io/badge/AI-Enhanced-blue?style=for-the-badge)
+
+## 🧠 What is KENKI OS?
+
+KENKI OS – TrAEL AI Edition is a next-gen, AI-augmented Linux OS based on BlackArch, designed for cybersecurity professionals, ethical hackers, and AI researchers. It fuses the raw power of over 2,800+ hacking tools from BlackArch with a smart, Claude 4-powered terminal assistant called `kenki-assist`.
+
+Whether you're reverse engineering, hunting malware, scanning networks, or automating recon, KENKI gives you both intelligence and infrastructure—in one place.
 
 ## 🚀 Features
 
@@ -33,6 +39,37 @@
 - **Auto-Launch AI Assistant**: Starts automatically on boot
 - **Professional UI**: Modern desktop environment with XFCE
 
+### 🌐 Hybrid AI Support
+- **🔗 Cloud**: Claude 4 via Anthropic API
+- **🔒 Local**: Llama.cpp, Mistral, Phi-2, or Ollama
+
+### 🎙️ Voice Support (Optional)
+- Use Whisper for offline speech-to-text
+- Speak commands and hear responses
+
+### 🖥️ Optional Warp-style GUI
+- Tauri or Electron frontend in development
+- Output blocks, command history, AI sidebar
+
+### 🧰 Offline Ready
+- No cloud dependency — works 100% air-gapped
+
+### 🛠️ Developer-First
+- Includes Python, Rust, Go, Git, Docker, QEMU, and more
+
+## 🛠️ Tech Stack
+
+| Layer        | Tools Used                           |
+|--------------|---------------------------------------|
+| Base OS      | BlackArch Linux                       |
+| AI Cloud     | Claude 4 (Anthropic API)              |
+| AI Local     | Llama.cpp, Ollama, Mistral, Phi       |
+| Shell        | Zsh + Starship                        |
+| Terminal     | Alacritty / Kitty                     |
+| Voice Input  | Whisper.cpp / Vosk                    |
+| GUI (opt.)   | Tauri / Textual (coming soon)         |
+| ISO Builder  | ArchISO                               |
+
 ## 📁 Project Structure
 
 ```
@@ -60,6 +97,22 @@ KENKI OS/
 │   └── QUICK_START.md          # Quick start guide
 ├── build-iso.sh                 # Automated build script
 └── README.md                    # This file
+```
+
+## 📦 Installation
+
+### 🧪 Live Testing
+
+Download the ISO (or build it yourself) and boot into KENKI via:
+- 🖥️ VirtualBox / QEMU / UTM
+- 🧳 USB Live boot
+
+### 🧰 Manual Install (for CLI assistant)
+
+```bash
+git clone https://github.com/yourusername/kenki-os.git
+cd kenki-os/install
+bash install.sh
 ```
 
 ## 🛠️ Quick Start
@@ -136,6 +189,20 @@ Edit `/etc/kenki/ai-assist/config.json`:
 - "Explain tool" → Gets tool explanation
 - "Show help" → Displays available commands
 
+## 💬 Example Usage
+
+```bash
+kenki-assist "Explain this command: awk '{print $2}' file.txt"
+```
+
+```bash
+kenki-assist "Find all open ports in the 192.168.1.0/24 range"
+```
+
+```bash
+kenki-assist "Summarize this network scan log: logs/nmap-result.txt"
+```
+
 ## 🧪 Testing
 
 ### Run Test Suite
@@ -167,6 +234,23 @@ python demo.py
 - Edit GRUB theme in `archiso/releng/ai-assist-overlay/etc/kenki/kenki-grub-theme/`
 - Modify desktop shortcuts in overlay
 
+## 👥 Who Is It For?
+
+* Ethical hackers and red teamers
+* SOC analysts and cybersecurity researchers
+* AI engineers who work in security
+* OS developers exploring AI + Linux integration
+* Students building cybersecurity-AI prototypes
+
+## 🧩 Roadmap
+
+* [x] Claude 4 + Local AI Terminal CLI
+* [ ] Tauri GUI Interface (Warp-style terminal)
+* [ ] AI-enhanced log and PCAP stream analyzer
+* [ ] GPT-4o fallback integration
+* [ ] Plugin system for modular AI agents
+* [ ] Voice-to-terminal auto actions
+
 ## 📚 Documentation
 
 - [Quick Start Guide](docs/QUICK_START.md) - Getting started with KENKI OS
@@ -192,6 +276,13 @@ python tests/test_kenki.py
 # Test AI assistant locally
 python ai-assist/kenki_assist.py --interactive
 ```
+
+We welcome:
+* New AI features or prompt chains
+* Shell integrations
+* Claude/GPT prompt engineering
+* GUI frontend improvements (Tauri / Electron)
+* Model benchmarking and optimization
 
 ## ⚠️ Legal and Ethical Notice
 
@@ -258,6 +349,11 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - **Anthropic** - Claude AI API
 - **OpenAI** - GPT API
 - **llama.cpp** - Local LLM support
+
+## ✨ Credits
+
+Created by **ROHIT(CYROS)**
+Founder of the KENKI Project – where AI meets offensive security.
 
 ---
 
